@@ -37,3 +37,20 @@ console.log(arr1);
 //!array in array
 var images = [[225, 250, 240], [325, 346, 125]];
 console.log(images);
+//!Tuples
+var tupl;
+tupl = [24, 'hello dash mehran', true];
+var mmeb = tupl[1];
+console.log(mmeb.substring(6));
+//!object
+var obj = { name: "mehran", age: 24, id: 1 };
+console.log(obj.nam);
+obj = { name: 'amo mehran', age: 25, id: 3 };
+obj.id = 2;
+console.log(obj);
+var user = {
+    name: 'mehran',
+    age: 24,
+    isVerfay: true
+};
+console.log(user);
