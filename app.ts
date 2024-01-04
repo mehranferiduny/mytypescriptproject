@@ -75,3 +75,18 @@ let user:{
 }
 console.log(user);
 
+
+
+//!enum
+
+
+const enum HandelUser{
+  ADMIN,
+  USER,
+  GUEST
+}
+
+const users=HandelUser.GUEST;
+let admin:HandelUser=HandelUser.ADMIN;
+console.log(admin);
+

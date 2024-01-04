@@ -54,3 +54,6 @@ var user = {
     isVerfay: true
 };
 console.log(user);
+var users = 2 /* HandelUser.GUEST */;
+var admin = 0 /* HandelUser.ADMIN */;
+console.log(admin);
