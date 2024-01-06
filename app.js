@@ -91,3 +91,9 @@ var m = function (num1, num2) {
     return c;
 };
 console.log(m(11, 13));
+//!blurting method
+var cars = ['tiba', 'saina', '207', '206'];
+cars.map(function (car) {
+    console.log("car is ".concat(car));
+    return "car is ".concat(car);
+});

@@ -141,3 +141,14 @@ console.log(numSum(12,7));
   return c;
  }
   console.log(m(11,13));
+
+
+  //!blurting method
+
+  let cars:Array<string>=['tiba','saina','207','206'];
+
+  cars.map((car:string):string=>{
+    console.log(`car is ${car}`);
+    return `car is ${car}`;
+    
+  })
