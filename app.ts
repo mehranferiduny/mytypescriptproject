@@ -135,4 +135,9 @@ console.log(numSum(12,7));
  sinup("m2hr4nus@gmail.com",12345678);
 
 
- 
+ //!type method
+ let m=(num1:number,num2:number):number=>{ //type number string void and ....
+  let c=num1+num2;
+  return c;
+ }
+  console.log(m(11,13));

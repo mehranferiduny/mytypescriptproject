@@ -85,3 +85,9 @@ var sinup = function (email, password, userType) {
     console.log("user by Emial:".concat(email, " and Password:").concat(password, "and Type:").concat(userType));
 };
 sinup("m2hr4nus@gmail.com", 12345678);
+//!type method
+var m = function (num1, num2) {
+    var c = num1 + num2;
+    return c;
+};
+console.log(m(11, 13));
