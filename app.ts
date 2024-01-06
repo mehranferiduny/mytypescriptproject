@@ -121,3 +121,18 @@ const numSum=(num1:number,num2:number)=>{
 
 console.log(numSum(12,7));
 
+//!opshoin 
+ const singup=(email:string,password:number,userType?:string)=>{
+  console.log(`user by Emial:${email} and Password:${password}and Type:${userType}`);
+ }
+ singup("m2hr4nus@gmail.com",12345678);
+
+
+ //!defalet value 
+ const sinup=(email:string,password:number,userType:string='panel')=>{
+  console.log(`user by Emial:${email} and Password:${password}and Type:${userType}`);
+ }
+ sinup("m2hr4nus@gmail.com",12345678);
+
+
+ 

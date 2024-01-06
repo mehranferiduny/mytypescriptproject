@@ -74,3 +74,14 @@ var numSum = function (num1, num2) {
     return num1 + num2;
 };
 console.log(numSum(12, 7));
+//!opshoin 
+var singup = function (email, password, userType) {
+    console.log("user by Emial:".concat(email, " and Password:").concat(password, "and Type:").concat(userType));
+};
+singup("m2hr4nus@gmail.com", 12345678);
+//!defalet value 
+var sinup = function (email, password, userType) {
+    if (userType === void 0) { userType = 'panel'; }
+    console.log("user by Emial:".concat(email, " and Password:").concat(password, "and Type:").concat(userType));
+};
+sinup("m2hr4nus@gmail.com", 12345678);
