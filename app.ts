@@ -158,8 +158,9 @@ console.log(numSum(12,7));
   //!type cheking
 
   const panelAdmin=(fname:string,lname:string,userType:string="panel")=>{
+    let p:string="admin"
     if(userType == "panel") return fname+lname;
-    else return "hii"
+    else return p
    
   }
 
