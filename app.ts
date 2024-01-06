@@ -152,3 +152,15 @@ console.log(numSum(12,7));
     return `car is ${car}`;
     
   })
+
+
+
+  //!type cheking
+
+  const panelAdmin=(fname:string,lname:string,userType:string="panel")=>{
+    if(userType == "panel") return fname+lname;
+    else return "hii"
+   
+  }
+
+  panelAdmin("mehran","fereiduni");
