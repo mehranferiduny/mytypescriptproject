@@ -48,43 +48,9 @@ b1=false;
 
 const value: unknown = "Hello World";
 const someString: string = value as string;
-const otherString = someString.toUpperCase(); // "HELLO WORLD"
-console.log(otherString);
+// const otherString = someString.toUpperCase(); // "HELLO WORLD"
+// console.log(otherString);
 
-type Result =
-  | { success: true; value: unknown }
-  | { success: false; error: Error };
-
-  function tryDeserializeLocalStorageItem(key: string): Result {
-    const item = localStorage.getItem(key);
-  
-    if (item === null) {
-      // The item does not exist, thus return an error result
-      return {
-        success: false,
-        error: new Error(`Item with key "${key}" does not exist`),
-      };
-    }
-  
-    let value: unknown;
-  
-    try {
-      value = JSON.parse(item);
-    } catch (error:any) {
-      // The item is not valid JSON, thus return an error result
-      return {
-        success: false,
-        error,
-      };
-    }
-  
-    // Everything's fine, thus return a success result
-    return {
-      success: true,
-      value,
-    };
-  }
-  tryDeserializeLocalStorageItem("mehran")
 
 
 //!Arrays
@@ -99,7 +65,7 @@ console.log(arr1[1]);
 console.log(arr1);
 //!array in array
 let images:number[][]=[[225,250,240],[325,346,125]]
-console.log(images);
+// console.log(images);
 
 
 //!Tuples
@@ -115,7 +81,7 @@ let obj={name:"mehran", age: 24 ,id:1};
 
 obj={name:'amo mehran',age:25,id:3}
 obj.id=2;
-console.log(obj);
+// console.log(obj);
 
 let user:{
   name:string,
@@ -127,7 +93,7 @@ let user:{
   isVerfay:true
 
 }
-console.log(user);
+// console.log(user);
 
 
 
@@ -142,5 +108,16 @@ const enum HandelUser{
 
 const users=HandelUser.GUEST;
 let admin:HandelUser=HandelUser.ADMIN;
-console.log(admin);
+// console.log(admin);
+
+
+
+
+//!function
+
+const numSum=(num1:number,num2:number)=>{
+  return num1+num2
+}
+
+console.log(numSum(12,7));
 

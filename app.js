@@ -35,35 +35,8 @@ b1 = false;
 // b1.method();
 var value = "Hello World";
 var someString = value;
-var otherString = someString.toUpperCase(); // "HELLO WORLD"
-console.log(otherString);
-function tryDeserializeLocalStorageItem(key) {
-    var item = localStorage.getItem(key);
-    if (item === null) {
-        // The item does not exist, thus return an error result
-        return {
-            success: false,
-            error: new Error("Item with key \"".concat(key, "\" does not exist")),
-        };
-    }
-    var value;
-    try {
-        value = JSON.parse(item);
-    }
-    catch (error) {
-        // The item is not valid JSON, thus return an error result
-        return {
-            success: false,
-            error: error,
-        };
-    }
-    // Everything's fine, thus return a success result
-    return {
-        success: true,
-        value: value,
-    };
-}
-tryDeserializeLocalStorageItem("mehran");
+// const otherString = someString.toUpperCase(); // "HELLO WORLD"
+// console.log(otherString);
 //!Arrays
 var arr1 = [1, "hii", false];
 // let arr2: number[]=[1,4,"hii"];
@@ -76,7 +49,7 @@ console.log(arr1[1]);
 console.log(arr1);
 //!array in array
 var images = [[225, 250, 240], [325, 346, 125]];
-console.log(images);
+// console.log(images);
 //!Tuples
 var tupl;
 tupl = [24, 'hello dash mehran', true];
@@ -87,13 +60,17 @@ var obj = { name: "mehran", age: 24, id: 1 };
 // console.log(obj.nam);
 obj = { name: 'amo mehran', age: 25, id: 3 };
 obj.id = 2;
-console.log(obj);
+// console.log(obj);
 var user = {
     name: 'mehran',
     age: 24,
     isVerfay: true
 };
-console.log(user);
 var users = 2 /* HandelUser.GUEST */;
 var admin = 0 /* HandelUser.ADMIN */;
-console.log(admin);
+// console.log(admin);
+//!function
+var numSum = function (num1, num2) {
+    return num1 + num2;
+};
+console.log(numSum(12, 7));
