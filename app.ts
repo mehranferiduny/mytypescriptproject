@@ -165,3 +165,22 @@ console.log(numSum(12,7));
   }
 
   panelAdmin("mehran","fereiduni");
+
+
+
+  //! typeAliase
+
+  type mehran=number | string;
+
+  function setFullNmae(name:string,family?:string):mehran{
+    let ret:mehran;
+    if(family){
+    ret=`accont name ${name} ${family}`
+    }else{
+    ret=28
+    }
+    return ret;
+  }
+
+  console.log(setFullNmae("mehran","fereiduni"));
+  console.log(setFullNmae("mehran"));

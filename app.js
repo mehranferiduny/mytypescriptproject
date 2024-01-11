@@ -97,3 +97,25 @@ cars.map(function (car) {
     console.log("car is ".concat(car));
     return "car is ".concat(car);
 });
+//!type cheking
+var panelAdmin = function (fname, lname, userType) {
+    if (userType === void 0) { userType = "panel"; }
+    var p = "admin";
+    if (userType == "panel")
+        return fname + lname;
+    else
+        return p;
+};
+panelAdmin("mehran", "fereiduni");
+function setFullNmae(name, family) {
+    var ret;
+    if (family) {
+        ret = "accont name ".concat(name, " ").concat(family);
+    }
+    else {
+        ret = 28;
+    }
+    return ret;
+}
+console.log(setFullNmae("mehran", "fereiduni"));
+console.log(setFullNmae("mehran"));
